@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ร้านแชมพูดูแลเส้นผม เลือกสูตรที่เหมาะกับคุณ พร้อมบริการจัดส่ง">
+<title>HAIRÉ — Hair Care Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#">HAIRÉ<span>.</span></a><nav><a href="#products">สินค้า</a><a href="#about">เกี่ยวกับเรา</a><a href="#contact">ติดต่อ</a></nav><button class="cart-btn" id="cartOpen">ตะกร้า <b id="cartCount">0</b></button></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">EVERYDAY HAIR RITUAL</p><h1>ผมสวย เริ่มต้น<br>จากการดูแลที่ใช่</h1><p>เลือกแชมพูสูตรที่เหมาะกับเส้นผมของคุณ ด้วยส่วนผสมที่ใส่ใจในทุกวัน</p><a class="primary" href="#products">เลือกซื้อสินค้า</a><div class="hero-note">ดูแลเส้นผมอย่างอ่อนโยน • ส่งตรงถึงบ้าน</div></div><div class="hero-art"><div class="sun"></div><div class="bottle bottle-a"><span>HAIRÉ</span><small>ANTI HAIR FALL<br>SHAMPOO</small></div><div class="bottle bottle-b"><span>HAIRÉ</span><small>ANTI DANDRUFF<br>SHAMPOO</small></div><div class="leaf l1"></div><div class="leaf l2"></div></div></section>
+<section class="benefits"><div><strong>02</strong><span>สูตรดูแลเส้นผม</span></div><div><strong>ใส่ใจ</strong><span>เลือกสูตรให้เหมาะกับคุณ</span></div><div><strong>พร้อมส่ง</strong><span>แพ็คอย่างระมัดระวัง</span></div></section>
+<section class="products section" id="products"><div class="section-head"><div><p class="eyebrow">OUR COLLECTION</p><h2>เลือกสูตรที่ใช่สำหรับคุณ</h2></div><p>ผลิตภัณฑ์ดูแลเส้นผมในทุกวัน</p></div><div class="product-grid" id="productGrid"></div></section>
+<section class="about section" id="about"><div class="about-art"><div class="about-circle">HAIRÉ<br><small>CARE WITH LOVE</small></div></div><div><p class="eyebrow">ABOUT HAIRÉ</p><h2>การดูแลที่ดี<br>เริ่มจากความเข้าใจ</h2><p>เราเชื่อว่าการดูแลเส้นผมไม่จำเป็นต้องซับซ้อน เลือกสูตรที่ตอบโจทย์ ใช้อย่างสม่ำเสมอ และใส่ใจตัวเองในทุกวัน</p><ul><li>มีข้อมูลสินค้าและรหัส SKU ชัดเจน</li><li>ตรวจสอบรายการสั่งซื้อก่อนจัดส่ง</li><li>แพ็คสินค้าอย่างใส่ใจ</li></ul></div></section>
+<section class="contact section" id="contact"><p class="eyebrow">NEED HELP?</p><h2>มีคำถามเกี่ยวกับสินค้าไหม</h2><p>ติดต่อร้านค้าเพื่อสอบถามข้อมูลเพิ่มเติม</p><a class="outline" href="mailto:hello@haire.example">ส่งอีเมลถึงเรา</a></section>
+</main>
+<footer><a class="brand" href="#">HAIRÉ<span>.</span></a><p>© 2026 HAIRÉ Hair Care Store · เว็บไซต์ตัวอย่างสำหรับการศึกษา</p></footer>
+<div class="overlay" id="overlay"></div><aside class="drawer" id="cartDrawer"><div class="drawer-head"><h3>ตะกร้าสินค้า</h3><button class="x" id="cartClose">×</button></div><div id="cartItems"></div><div class="cart-total"><span>ยอดรวม</span><strong id="cartTotal">฿0</strong></div><button class="primary wide" id="checkoutOpen">ดำเนินการสั่งซื้อ</button></aside>
+<div class="modal" id="checkoutModal"><div class="modal-card"><button class="x modal-x" id="checkoutClose">×</button><p class="eyebrow">CHECKOUT</p><h2>ข้อมูลสำหรับจัดส่ง</h2><form id="checkoutForm"><label>ชื่อ-นามสกุล<input name="customer" required></label><label>เบอร์โทรศัพท์<input name="phone" inputmode="tel" required pattern="[0-9+() -]{9,15}"></label><label>ที่อยู่จัดส่ง<textarea name="address" rows="3" required></textarea></label><label>รหัสไปรษณีย์<input name="postcode" required pattern="[0-9]{5}" maxlength="5"></label><label>หมายเหตุ (ถ้ามี)<input name="note"></label><div class="checkout-summary" id="checkoutSummary"></div><button class="primary wide" type="submit">ยืนยันคำสั่งซื้อ</button><p class="tiny">ระบบจะบันทึกคำสั่งซื้อเมื่อเชื่อมต่อ Google Sheets แล้ว</p></form></div></div>
+<div class="toast" id="toast"></div><script src="app.js"></script>
+</body></html>
