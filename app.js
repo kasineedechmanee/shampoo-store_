@@ -1,5 +1,5 @@
 // ตั้งค่า Google Apps Script Web App URL ใน CONFIG เมื่อพร้อมเชื่อม Google Sheets
-const CONFIG={SHEETS_WEB_APP_URL:""};
+const CONFIG={SHEETS_WEB_APP_URL: "https://script.google.com/a/macros/spumail.net/s/AKfycbzINdsEMF0wvrI6UQdkSzO6wa06EezmcsmUttp2bPzX7INWt6mRJjF1YwaxEooKJZVy5g/exec",};
 const products=[
  {sku:"SH-001",name:"แชมพูสูตรลดผมขาดหลุดร่วง",desc:"ทำความสะอาดเส้นผมและหนังศีรษะอย่างอ่อนโยน เหมาะสำหรับการดูแลผมประจำวัน",price:259,stock:30,tone:"cream",label:"ANTI HAIR FALL"},
  {sku:"SH-002",name:"แชมพูสูตรดูแลหนังศีรษะ",desc:"ช่วยชำระล้างสิ่งสกปรกและดูแลหนังศีรษะให้รู้สึกสะอาดสดชื่น",price:229,stock:25,tone:"green",label:"SCALP CARE"}
